@@ -1,0 +1,105 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html,body
+{
+width:100%;
+height:100%;
+font-family: 'Gilroy';
+}
+#main{
+  width:100%;
+  height:100%;
+  /* border:1px solid green; */
+  position: relative;
+  overflow: hidden;
+}
+.circle{
+  position: absolute;
+  top:50%;
+  left:-100vh;
+  transform: translate(0%,-50%) rotate(100deg);
+  width:200vh;
+  height:200vh;
+  /* background-color: red; */
+  border: 2px solid #e9e9e9;
+  border-radius: 50%;
+}
+.stripe{
+  display: flex;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(0,-50%) ;
+  transform-origin: 0% 50%;
+  width:100%;
+  height: 60px;
+  /* background-color: yellow; */
+}
+
+.str1{
+  transform: translate(0,-50%) rotate(-20deg);
+}
+.str2{
+  transform: translate(0,-50%) rotate(-10deg);
+}
+.str4{
+  transform: translate(0,-50%) rotate(10deg);
+}
+.str5{
+  transform: translate(0,-50%) rotate(20deg);
+}
+
+.first{
+  position: relative;
+  width:50%;
+  /* background-color: green; */
+}
+.sec{
+  opacity: .4;
+  width:50%;
+  padding-left: 30px;
+  /* background-color: purple; */
+}
+.sec h2{
+  font-size: 2vw;
+  font-weight: 700;
+}
+.sec h6{
+  font-size: 1vw;
+  opacity: .5;
+  font-weight: 500;
+}
+.smcircle{
+  position: absolute;
+  top:50%;
+  right:-.3vw;
+  transform: translate(0,-50%);
+  background-color: #5b5b5b77;
+  width: .5vw;
+  height: .5vw;
+  border-radius: 50%;
+}
+#panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right:3%;
+  top:50%;
+  width:5%;
+  height:20%;
+  
+  transform: translate(0,-50%);
+}
+.mncircle{
+  cursor: pointer;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  opacity: .08;
+  background-color: rgb(0, 0, 0);
+}
